@@ -9,12 +9,12 @@ Attempt to learn how blockchain works by following [this](https://jeiwan.cc/post
 3. `$ blockchain-cli`
 
 ## Progress/TODO
--[x] Basic prototype
--[x] Proof of work
--[ ] Persistence
--[ ] Transactions (Part I)
--[ ] Addresses
--[ ] Transactions (Part II)
--[ ] Network
+- [x] Basic prototype
+- [x] Proof of work
+- [ ] Persistence
+- [ ] Transactions (Part I)
+- [ ] Addresses
+- [ ] Transactions (Part II)
+- [ ] Network
 
 
