@@ -25,8 +25,7 @@ type pow struct {
 func newPow(b *block) *pow {
 	target := big.NewInt(1)
 	target.Lsh(target, uint(256-targetBits))
-	pow := &pow{b, target}
-	return pow
+	return &pow{b, target}
 }
 
 func (pow *pow) prepareData(nonce int) []byte {
