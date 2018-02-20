@@ -18,11 +18,11 @@ const targetBits = 24
 
 // pow is a minimal Proof Of Work representation
 type pow struct {
-	block  *block
+	block  *Block
 	target *big.Int
 }
 
-func newPow(b *block) *pow {
+func newPow(b *Block) *pow {
 	target := big.NewInt(1)
 	target.Lsh(target, uint(256-targetBits))
 	return &pow{b, target}
