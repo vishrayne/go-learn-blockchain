@@ -4,14 +4,19 @@
 Attempt to learn how blockchain works by following [this](https://jeiwan.cc/posts/building-blockchain-in-go-part-1) guide.
 
 # Run
-1. `$ go build github.com/vishrayne/go-learn-blockchain/cmd/blockchain-cli`
-2. `$ go install github.com/vishrayne/go-learn-blockchain/cmd/blockchain-cli`
-3. `$ blockchain-cli`
+1. Install dep, if not, and run
+```
+$ dep ensure
+```
+2. `$ go build github.com/vishrayne/go-learn-blockchain/cmd/blockchain-cli`
+3. `$ go install github.com/vishrayne/go-learn-blockchain/cmd/blockchain-cli`
+4. `$ blockchain-cli`
 
 ## Progress/TODO
 - [x] Basic prototype
 - [x] Proof of work
-- [ ] Persistence
+- [x] Persistence
+- [ ] CLI
 - [ ] Transactions (Part I)
 - [ ] Addresses
 - [ ] Transactions (Part II)
