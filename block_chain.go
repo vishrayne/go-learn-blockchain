@@ -27,6 +27,11 @@ func (bc *Blockchain) Iterator() *Iterator {
 	return &Iterator{bc.tip, bc.db}
 }
 
+// Close will perform necessary cleanup
+func (bc *Blockchain) Close() {
+	bc.db.Close()
+}
+
 // Next will move on to the next block in the chain
 func (i *Iterator) Next() *Block {
 	var block *Block

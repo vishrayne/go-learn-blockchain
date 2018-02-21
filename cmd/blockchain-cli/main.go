@@ -8,6 +8,8 @@ import (
 
 func main() {
 	bc := blockchain.NewBlockchain()
+	defer bc.Close()
+
 	bc.AddBlock("First transaction")
 	// bc.AddBlock("Second transaction")
 	// bc.AddBlock("Third transaction")
